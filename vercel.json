@@ -5,8 +5,16 @@
       "schedule": "30 9 * * *"
     },
     {
-      "path":"/api/v1/cron.updateOngoingMeetings",
+      "path": "/api/v1/cron.updateOngoingMeetings",
       "schedule": "59 23 * * *"
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://yuantu.app/$1",
+      "permanent": true,
+      "statusCode": 301
     }
   ]
 }

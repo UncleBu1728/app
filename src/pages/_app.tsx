@@ -6,7 +6,6 @@ import Head from 'next/head'
 import { trpcNext } from "../trpc";
 import { NextPageWithLayout } from "../NextPageWithLayout";
 import { ToastContainer } from "react-toastify";
-import { useEffect } from 'react'
 
 import '../app.css'
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -16,13 +15,6 @@ type AppPropsWithLayout = AppProps & {
 }
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
-  
-  useEffect(() => {
-    if (window.location.hostname === "beta.yuanjian.org") {
-      window.location.href = "https://yuantu.app";
-    }
-  }, []);
-
   const getLayout = Component.getLayout || (page => page)
 
   return (
