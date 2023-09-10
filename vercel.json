@@ -11,8 +11,8 @@
   ],
   "redirects": [
     {
-      "source": "/(.*)",
-      "destination": "https://yuantu.app/$1",
+      "source": "/^(?!.*www\\.yuantuapp\\.com).*$/",
+      "destination": "https://www.yuantuapp.com/$1",
       "permanent": true
     }
   ]
